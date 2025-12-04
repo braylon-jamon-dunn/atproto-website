@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Self-hosting',
+  title: 'Self-hosting - AT Protocol Docs',
   description:
-    'Self-hosting a Bluesky PDS means running your own Personal Data Server that is capable of federating with the wider ATProto network.',
+    'Self-hosting components of the AT Protocol Stack.',
 }
 
 export default async function HomePage({ params }: any) {
