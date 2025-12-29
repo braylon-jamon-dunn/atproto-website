@@ -1,8 +1,8 @@
 import { Page } from '@/components/Page'
 
 export const metadata = {
-  title: 'Account Lifecyle Events',
-  description: 'Account Lifecycle Best Practices.',
+  title: 'Accounts and deletions',
+  description: 'How account lifecycles and deletions work in AT Protocol',
 }
 
 export default async function HomePage({ params }: any) {
