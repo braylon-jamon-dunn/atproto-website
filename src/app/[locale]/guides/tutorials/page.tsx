@@ -2,7 +2,8 @@ import { Page } from '@/components/Page'
 
 export const metadata = {
   title: 'Tutorials - AT Protocol Docs',
-  description: 'Build an app that lets you broadcast and receive status updates using AT Record Lexicons.',
+  description:
+    'These tutorials will guide you through building applications using the AT Protocol.',
 }
 
 export default async function HomePage({ params }: any) {
