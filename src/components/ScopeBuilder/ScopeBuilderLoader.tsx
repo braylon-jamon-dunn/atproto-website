@@ -6,7 +6,9 @@ export function ScopeBuilderLoader() {
   const [registered, setRegistered] = useState(false)
 
   useEffect(() => {
-    import('./registerElements').then(() => setRegistered(true))
+    import('./registerElements')
+      .then((m) => m.registerScopeBuilder())
+      .then(() => setRegistered(true))
   }, [])
 
   if (!registered) {
@@ -17,10 +19,5 @@ export function ScopeBuilderLoader() {
     )
   }
 
-  return (
-    <>
-      <scope-builder></scope-builder>
-      <permission-author></permission-author>
-    </>
-  )
+  return <scope-builder></scope-builder>
 }
